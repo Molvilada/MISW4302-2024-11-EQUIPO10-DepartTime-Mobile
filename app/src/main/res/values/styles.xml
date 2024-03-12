@@ -104,15 +104,25 @@
         <item name="android:insetBottom">0dp</item>
     </style>
 
-    <!-- Estilo para TextInputLayout -->
     <style name="CustomDropdownStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
         <item name="backgroundTint">@color/onPrimary</item>
         <item name="boxStrokeColor">@color/box_stroke_color</item>
-        <item name="android:textColor">@color/onPrimaryContainer</item>
-        <item name="android:textColorHint">@color/onPrimaryContainer</item>
+        <item name="android:textColor">@color/box_stroke_color</item>
+        <item name="android:textColorHint">@color/box_stroke_color</item>
         <item name="hintTextColor">@color/onPrimaryContainer</item>
-        <item name="endIconTint">@color/onPrimaryContainer</item>
+        <item name="endIconTint">@color/box_stroke_color</item>
     </style>
+
+    <style name="CustomMaterialDatePickerStyle" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onPrimaryContainer</item>
+        <item name="colorOnSurfaceVariant">@color/onPrimaryContainer</item>
+        <item name="colorSecondaryContainer">@color/primaryOpacity20</item>
+    </style>
+
+
 
 
 
