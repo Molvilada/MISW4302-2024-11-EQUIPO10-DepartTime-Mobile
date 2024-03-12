@@ -15,7 +15,6 @@
         app:layout_constraintTop_toTopOf="parent"
         android:maxHeight="64dp">
     </FrameLayout>
-    <!-- Contador de días -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:gravity="center"
-        android:text="7 días"
+        android:text="10 horas 31 minutos"
         android:layout_gravity="center_horizontal"
         />
 
@@ -176,7 +175,6 @@
 
 
     </LinearLayout>
-    <!-- Botón para agregar nueva alarma -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_alarm"
         android:layout_width="wrap_content"

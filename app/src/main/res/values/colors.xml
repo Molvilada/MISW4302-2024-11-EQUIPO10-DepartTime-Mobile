@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="onPrimaryContainer">#3E2A00</color>
+    <color name="onPrimaryContainerDisabled">#293E2A00</color>
     <color name="onPrimary">#FFFDF9</color>
     <color name="primary">#714D00</color>
     <color name="white">#FFFFFF</color>
     <color name="surface">#FFE2A4</color>
     <color name="surfaceContainerHighest">#FFF2D7</color>
     <color name="gray">#666666</color>
+    <color name="secondary">#EFE6F2</color>
+    <color name="onSecondary">#24152B</color>
 </resources>
