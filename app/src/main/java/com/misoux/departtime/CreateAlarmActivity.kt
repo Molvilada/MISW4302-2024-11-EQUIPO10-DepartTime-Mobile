@@ -13,6 +13,9 @@ import com.google.android.material.datepicker.DateValidatorPointForward
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.textfield.TextInputLayout
 import androidx.core.util.Pair
+import com.google.android.material.timepicker.MaterialTimePicker
+import com.google.android.material.timepicker.TimeFormat
+import java.util.Calendar
 
 
 class CreateAlarmActivity : AppCompatActivity() {
@@ -56,13 +59,31 @@ class CreateAlarmActivity : AppCompatActivity() {
         buttonCalendar.setOnClickListener {
             val datePickerDialog = MaterialDatePicker.Builder.datePicker()
                 .setTheme(R.style.CustomMaterialDatePickerStyle)
-                .setTitleText("Selecciona una fecha o rango de fechas")
+                .setTitleText("Selecciona una fecha")
                 .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
                 .setCalendarConstraints(constraintsBuilder.build())
                 .build()
 
 
             datePickerDialog.show(supportFragmentManager, "datePicker")
+        }
+
+        val now = Calendar.getInstance()
+        val currentHour = now.get(Calendar.HOUR_OF_DAY)
+        val currentMinute = now.get(Calendar.MINUTE)
+
+        val buttonDepartureTime: MaterialButton = findViewById(R.id.button_departure_time)
+        buttonDepartureTime.setOnClickListener {
+            val materialTimePicker = MaterialTimePicker.Builder()
+                .setTheme(R.style.CustomMaterialTimePickerStyle)
+                .setTitleText("Selecciona la hora de salida")
+                .setTimeFormat(TimeFormat.CLOCK_12H)
+                .setHour(currentHour)
+                .setMinute(currentMinute)
+                .build()
+
+            materialTimePicker.show(supportFragmentManager, "MaterialTimePicker")
+
         }
 
     }

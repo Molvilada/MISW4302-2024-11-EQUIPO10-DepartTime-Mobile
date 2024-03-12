@@ -122,8 +122,19 @@
         <item name="colorSecondaryContainer">@color/primaryOpacity20</item>
     </style>
 
-
-
-
-
+    <style name="CustomMaterialTimePickerStyle" parent="ThemeOverlay.Material3.MaterialTimePicker">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorPrimaryContainer">@color/surfaceContainerHighest</item>
+        <item name="colorOnPrimaryContainer">@color/onPrimaryContainer</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onPrimaryContainer</item>
+        <item name="colorSurfaceVariant">@color/surfaceContainerHighest</item>
+        <item name="colorOnSurfaceVariant">@color/onPrimaryContainer</item>
+        <item name="colorSurfaceContainerHighest">@color/surfaceContainerHighest</item>
+        <item name="colorTertiaryContainer">@color/secondary</item>
+        <item name="colorOnTertiaryContainer">@color/onPrimaryContainer</item>
+        <item name="colorOnBackground">@color/onPrimaryContainer</item>
+        <item name="colorOutline">@color/onPrimaryContainer</item>
+    </style>
 </resources>
