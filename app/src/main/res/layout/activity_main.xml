@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/onPrimary"
+    android:background="@color/onPrimary">
 
     <!-- Fondo superior (marrón) con logo y campos de texto -->
     <LinearLayout
@@ -33,7 +35,6 @@
             style="@style/HeadlineSmallDark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/logo_image"
             android:text="@string/login"
             android:textColor="@color/onPrimary"
             android:textSize="24sp"
@@ -45,7 +46,6 @@
             style="@style/CustomTextInputLayoutStyleDark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/login_text"
             android:layout_marginTop="32dp"
             android:hint="@string/username_input">
 
@@ -62,7 +62,6 @@
             style="@style/CustomTextInputLayoutStyleDark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/username_layout"
             android:layout_marginTop="20dp"
             android:hint="@string/password_input"
             app:endIconMode="password_toggle"
@@ -93,7 +92,7 @@
         app:layout_constraintTop_toBottomOf="@+id/brown_background">
 
         <!-- Botón de inicio de sesión -->
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/login_button"
             style="@style/ButtonPrimary"
             android:layout_height="50dp"
