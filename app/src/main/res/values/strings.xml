@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DEPARTTIME</string>
+    <string name="username_input">Usuario</string>
+    <string name="password_input">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="no_account">¿No tienes cuenta?</string>
+    <string name="signin_action">Regístrate</string>
+</resources>
