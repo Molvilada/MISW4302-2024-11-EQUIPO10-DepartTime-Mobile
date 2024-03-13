@@ -6,23 +6,23 @@ import android.widget.Button
 import android.widget.TextView
 import android.content.Intent
 
-
-class MainActivity : AppCompatActivity() {
+class RegisterActivity: AppCompatActivity()  {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_registry_page)
 
-        val loginButton = findViewById<Button>(R.id.login_button)
-        val registerTextView = findViewById<TextView>(R.id.register_text)
+        val registerButton = findViewById<Button>(R.id.register_button)
+        val loginTextView = findViewById<TextView>(R.id.login_text_action)
 
-        loginButton.setOnClickListener {
+        registerButton.setOnClickListener {
             val intent = Intent(this, AlarmsListActivity::class.java)
             startActivity(intent)
         }
 
-        registerTextView.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
+        loginTextView.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
     }
 }
