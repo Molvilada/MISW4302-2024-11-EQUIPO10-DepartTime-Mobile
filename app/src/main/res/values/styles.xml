@@ -11,12 +11,14 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textColor">@color/onPrimaryContainer</item>
+        <item name="android:letterSpacing">0.01</item>
     </style>
 
     <style name="BodyLargeDark">
         <item name="android:fontFamily">@font/roboto_light</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/onPrimary</item>
+        <item name="android:letterSpacing">0.05</item>
     </style>
 
     <style name="BodySmall">
@@ -38,36 +40,101 @@
         <item name="android:textColor">@color/onPrimaryContainer</item>
     </style>
 
+    <style name="LabelLargeProminent">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/onPrimaryContainer</item>
+    </style>
     <style name="LabelLargeDark">
         <item name="android:fontFamily">@font/roboto_regular</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/onPrimary</item>
     </style>
 
+    <style name="LabelMedium">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textColor">@color/onPrimaryContainer</item>
+    </style>
+
     <style name="CustomTextInputLayoutStyleDark" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
-        <item name="boxStrokeColor">@color/box_stroke_color</item>
+        <item name="boxStrokeColor">@color/box_stroke_color_dark</item>
         <item name="android:textColorHint">@color/onPrimary</item>
         <item name="android:textColor">@color/onPrimary</item>
         <item name="hintTextColor">@color/onPrimary</item>
         <item name="endIconTint">@color/onPrimary</item>
     </style>
 
+    <style name="CustomTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/box_stroke_color</item>
+        <item name="android:textColorHint">@color/onPrimaryContainer</item>
+        <item name="android:textColor">@color/onPrimaryContainer</item>
+        <item name="hintTextColor">@color/onPrimaryContainer</item>
+        <item name="endIconTint">@color/onPrimaryContainer</item>
+    </style>
+
     <style name="CustomEditTextStyleDark" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
         <item name="android:textAppearance">@style/BodyLargeDark</item>
         <item name="android:textColor">@color/onPrimary</item>
-        <item name="android:textCursorDrawable">@drawable/cursor_white</item>
+    </style>
+
+    <style name="CustomEditTextStyle" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textAppearance">@style/BodyLargeDark</item>
+        <item name="android:textColor">@color/onPrimaryContainer</item>
     </style>
 
     <style name="ButtonPrimary" parent="Widget.MaterialComponents.Button">
-        <item name="cornerRadius">50dp</item>
+        <item name="cornerRadius">40dp</item>
         <item name="backgroundTint">@color/primary</item>
-        <item name="android:textColor">@color/onPrimary</item>
         <item name="android:textAppearance">@style/LabelLarge</item>
+        <item name="android:textColor">@color/onPrimary</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:paddingLeft">0dp</item>
-        <item name="android:paddingRight">0dp</item>
-        <item name="android:paddingTop">0dp</item>
-        <item name="android:paddingBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
     </style>
 
+    <style name="ButtonSecondary" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">40dp</item>
+        <item name="backgroundTint">@color/secondary</item>
+        <item name="android:textColor">@color/onSecondary</item>
+        <item name="android:textAppearance">@style/LabelLarge</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="CustomDropdownStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="backgroundTint">@color/onPrimary</item>
+        <item name="boxStrokeColor">@color/box_stroke_color</item>
+        <item name="android:textColor">@color/box_stroke_color</item>
+        <item name="android:textColorHint">@color/box_stroke_color</item>
+        <item name="hintTextColor">@color/onPrimaryContainer</item>
+        <item name="endIconTint">@color/box_stroke_color</item>
+    </style>
+
+    <style name="CustomMaterialDatePickerStyle" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onPrimaryContainer</item>
+        <item name="colorOnSurfaceVariant">@color/onPrimaryContainer</item>
+        <item name="colorSecondaryContainer">@color/primaryOpacity20</item>
+    </style>
+
+    <style name="CustomMaterialTimePickerStyle" parent="ThemeOverlay.Material3.MaterialTimePicker">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorPrimaryContainer">@color/surfaceContainerHighest</item>
+        <item name="colorOnPrimaryContainer">@color/onPrimaryContainer</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onPrimaryContainer</item>
+        <item name="colorSurfaceVariant">@color/surfaceContainerHighest</item>
+        <item name="colorOnSurfaceVariant">@color/onPrimaryContainer</item>
+        <item name="colorSurfaceContainerHighest">@color/surfaceContainerHighest</item>
+        <item name="colorTertiaryContainer">@color/secondary</item>
+        <item name="colorOnTertiaryContainer">@color/onPrimaryContainer</item>
+        <item name="colorOnBackground">@color/onPrimaryContainer</item>
+        <item name="colorOutline">@color/onPrimaryContainer</item>
+    </style>
 </resources>

@@ -8,7 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.widget.Toolbar
 
+@Suppress("DEPRECATION")
 class ToolbarFragment : Fragment() {
 
     override fun onCreateView(
@@ -21,18 +23,27 @@ class ToolbarFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val toolbar = view.findViewById<Toolbar>(R.id.toolbar)
 
-        // Encuentra el botón de cerrar sesión y establece un ClickListener
         view.findViewById<TextView>(R.id.tvCerrarSesion).setOnClickListener {
             logout()
         }
+
+        view.findViewById<Toolbar>(R.id.toolbar).setOnClickListener{
+            goBack()
+        }
+
+        when (activity) {
+            is AlarmsListActivity -> {
+                toolbar.navigationIcon = null
+            }
+        }
     }
 
+    private fun goBack() {
+        activity?.finish()
+    }
     private fun logout() {
-        // Aquí puedes agregar la lógica para limpiar cualquier dato de sesión o preferencias
-        // ...
-
-        // Inicia MainActivity y limpia la pila de backstack para que el usuario no pueda volver a esta actividad
         val intent = Intent(activity, MainActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)

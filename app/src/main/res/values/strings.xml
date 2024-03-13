@@ -1,11 +1,19 @@
 <resources>
-    <string name="app_name">DEPARTTIME</string>
+    <string name="app_name">DepartTime</string>
     <string name="username_input">Usuario</string>
     <string name="password_input">Contraseña</string>
     <string name="login">Iniciar sesión</string>
     <string name="no_account">¿No tienes cuenta?</string>
     <string name="signin_action">Regístrate</string>
     <string name="logout_action">Cerrar sesión</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alarm_name_input">Nombre alarma</string>
+    <string name="alarm_departure_point">Punto de partida</string>
+    <string name="alarm_destination_point">Punto de llegada</string>
+    <string name="alarm_departure_time">Hora de llegada</string>
+    <string name="cancel_action">Cancelar</string>
+    <string name="create_action">Crear</string>
+    <string name="date_text">Fecha</string>
+    <string name="date_selected">Mañana</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="maps_confirm_action">Confirmar</string>
 </resources>

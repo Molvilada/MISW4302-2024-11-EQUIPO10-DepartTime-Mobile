@@ -11,14 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Encuentra el botón por su ID
-        val botonIniciarSesion = findViewById<Button>(R.id.login_button)
+        val loginButton = findViewById<Button>(R.id.login_button)
 
-        // Establece un listener para manejar el evento de clic
-        botonIniciarSesion.setOnClickListener {
-            // Crea un Intent para abrir la NuevaActivity
+        loginButton.setOnClickListener {
             val intent = Intent(this, AlarmsListActivity::class.java)
-            // Inicia la actividad
             startActivity(intent)
         }
     }
