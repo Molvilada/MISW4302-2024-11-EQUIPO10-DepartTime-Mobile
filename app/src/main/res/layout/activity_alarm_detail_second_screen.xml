@@ -6,6 +6,14 @@
     android:layout_height="match_parent">
 
 
+    <FrameLayout
+        android:id="@+id/toolbar_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxHeight="64dp">
+    </FrameLayout>
+
     <TextView
         android:id="@+id/when_sound"
         style="@style/LabelLarge"
@@ -27,7 +35,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="228dp"
         android:gravity="center"
-        android:text="entre semana"
+        android:text="17 de marzo"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -53,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
-        android:text="TRABAJO"
+        android:text="CITA MÉDICA"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="8:00 a.m"
+        android:text="7:00 a.m"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -121,7 +129,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Calle 144b # 15e -6"
+        android:text="Calle 4d # 53 -6"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -134,7 +142,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="176dp"
-        android:text="5:42 a.m"
+        android:text="6:05 a.m"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -160,7 +168,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="1 hora antes"
+        android:text="15 minutos antes"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -172,8 +180,8 @@
         style="@style/BodySmall"
         android:layout_width="293dp"
         android:layout_height="33dp"
-        android:layout_marginBottom="60dp"
-        android:text="La alarma está configurada para sonar 1 hora antes de la hora estimada de salida; este tiempo ya está incluido en la hora aproximada."
+        android:layout_marginBottom="148dp"
+        android:text="La alarma está configurada para sonar 15 minutos antes de la hora estimada de salida; este tiempo ya está incluido en la hora aproximada."
         android:textAlignment="center"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
