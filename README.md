@@ -6,7 +6,7 @@ Maqueta de la interfaz móvil de la aplicación DepartTime
 - SDK de Android
 - Emulador o dispositivo Android
 
-## Ejeecución
+## Ejecución
 
 ### Desde Android Studio
 1. Clonar el repositorio en la maquina local, puede utilizar el siguiente comando:
