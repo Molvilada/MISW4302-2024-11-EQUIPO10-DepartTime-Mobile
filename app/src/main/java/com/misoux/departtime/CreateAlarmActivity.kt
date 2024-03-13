@@ -1,5 +1,6 @@
 package com.misoux.departtime
 
+import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,6 +14,7 @@ import com.google.android.material.datepicker.DateValidatorPointForward
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.textfield.TextInputLayout
 import androidx.core.util.Pair
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
 import java.util.Calendar
@@ -27,7 +29,6 @@ class CreateAlarmActivity : AppCompatActivity() {
             val toolbarFragment = ToolbarFragment()
             supportFragmentManager.beginTransaction()
                 .add(R.id.toolbar_fragment_container, toolbarFragment)
-                .addToBackStack(null)
                 .commit()
         }
 
@@ -84,6 +85,34 @@ class CreateAlarmActivity : AppCompatActivity() {
 
             materialTimePicker.show(supportFragmentManager, "MaterialTimePicker")
 
+        }
+
+        val buttonDeparture: MaterialButton = findViewById(R.id.button_departure)
+
+        buttonDeparture.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
+
+        val buttonDestination: MaterialButton = findViewById(R.id.button_destination)
+
+        buttonDestination.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
+
+        val buttonCancel: MaterialButton = findViewById(R.id.button_cancel)
+
+        buttonCancel.setOnClickListener {
+            val intent = Intent(this, AlarmsListActivity::class.java)
+            startActivity(intent)
+        }
+
+        val buttonCreate: MaterialButton = findViewById(R.id.button_create)
+
+        buttonCreate.setOnClickListener {
+            val intent = Intent(this, AlarmsListActivity::class.java)
+            startActivity(intent)
         }
 
     }

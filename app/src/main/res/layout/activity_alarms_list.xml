@@ -22,6 +22,7 @@
         android:paddingHorizontal="16dp"
         app:layout_constraintTop_toBottomOf="@id/toolbar_fragment_container"
         android:layout_marginTop="52dp"
+        android:paddingBottom="2dp"
         >
     <TextView
         android:id="@+id/will_sound"
@@ -69,42 +70,46 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="vertical">
+
                 <TextView
+                    style="@style/HeadlineAlarm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/HeadlineAlarm"
                     android:text="TRABAJO" />
 
                 <TextView
+                    style="@style/BodySmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sonará entre semana"
                     android:paddingTop="14dp"
-                    style="@style/BodySmall"/>
+                    android:text="Sonará entre semana" />
+
                 <TextView
+                    style="@style/BodySmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="1 hora antes"
-                    style="@style/BodySmall"
-                    android:textColor="@color/gray"/>
+                    android:textColor="@color/gray" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
                 <com.google.android.material.materialswitch.MaterialSwitch
                     android:id="@+id/switch_alarm_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:switchMinWidth="52dp"
                     android:checked="true"
+                    app:switchMinWidth="52dp"
                     app:thumbTint="@color/selector_switch_thumb"
-                    app:trackTint="@color/selector_switch_track"
-                    app:trackDecorationTint="@color/selector_switch_decoration_track"/>
+                    app:trackDecorationTint="@color/selector_switch_decoration_track"
+                    app:trackTint="@color/selector_switch_track" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -113,6 +118,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="2dp"
         app:cardCornerRadius="12dp"
         app:layout_constraintTop_toBottomOf="@id/count_down"
         app:layout_constraintStart_toStartOf="parent"

@@ -14,4 +14,6 @@
     <string name="create_action">Crear</string>
     <string name="date_text">Fecha</string>
     <string name="date_selected">Mañana</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="maps_confirm_action">Confirmar</string>
 </resources>
